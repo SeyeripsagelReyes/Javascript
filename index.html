@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="BLCKJCK THE GAME" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BLCKJCK</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="center">
+      <a class="winer" id="wenner">BLCKJCK</a>
+    </div>
+    <div class="flex-parent-element">
+      <div class="flex-child-element balance">
+        <h2>Balance</h2>
+        <p id="balance">0</p>
+      </div>
+      <div class="flex-child-element player">
+        <h2>Player</h2>
+        <p id="card"></p>
+      </div>
+      <div class="flex-child-element playercard">
+        <h2>Dealer</h2>
+        <p id="deck"></p>
+      </div>
+    </div>
+    <div class="flex-parent-element">
+      <div class="flex-child-element balance">
+        <h2>Bet</h2>
+        <p id="bet">0</p>
+      </div>
+      <div class="flex-child-element dealer">
+        <div id="playdeck" class="card"></div>
+      </div>
+      <div class="flex-child-element dealercard">
+        <a style="color: silver" id="intCard" class="card black"></a
+        ><!--
+     -->
+        <div style="display: inline-block" id="botcard" class="card"></div>
+      </div>
+    </div>
+    <div class="buttondiv">
+      <button id="startbutton" onclick=" start() ">RE/START</button>
+      <button id="hitbutton" onclick=" getCard() " disabled>HIT</button>
+      <button id="standbutton" onclick=" stand() " disabled>STAND</button>
+    </div>
+    <div class="chipcontainer">
+      <div>
+        <button type="submit" class="chip">
+          <img
+            src="chips/chip100.png"
+            alt="chip100"
+            onclick="bet(100)"
+            border="0"
+          />
+        </button>
+      </div>
+      <div>
+        <button type="submit" class="chip">
+          <img
+            src="chips/chip500.png"
+            alt="chip500"
+            onclick="bet(500)"
+            border="0"
+          />
+        </button>
+      </div>
+      <div>
+        <button type="submit" class="chip">
+          <img
+            src="chips/chip1000.png"
+            alt="chip1000"
+            onclick="bet(1000)"
+            border="0"
+          />
+        </button>
+      </div>
+      <div>
+        <button type="submit" class="chip">
+          <img
+            src="chips/chip10000.png"
+            alt="chip10000"
+            onclick="bet(10000)"
+            border="0"
+          />
+        </button>
+      </div>
+      <div>
+        <button type="submit" class="chip">
+          <img
+            src="chips/chip100000.png"
+            alt="chip100000"
+            onclick="bet(100000)"
+            border="0"
+          />
+        </button>
+      </div>
+      <div>
+        <button type="submit" class="chip">
+          <img src="chips/chipdel.png" alt="chipdel" onclick="" border="0" />
+        </button>
+      </div>
+    </div>
+    <script src="jscript.js"></script>
+  </body>
+</html>
